@@ -11,7 +11,7 @@ Console recruiter allows you to create your own question list.
 
 ## But before you do
 0. Make sure you have Java 11 and running Docker
-1. Run [docker-up.bat](/docker/docker-up.bat) (or if you on linux, just copy the command from this script)
+1. Run [docker-up.bat](/console-recruiter-app/docker/docker-up.bat) (or if you on linux, just copy the command from this script)
 2. Complete [README](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/) from db project (how to use section)
 3. Build application with maven
     ```
@@ -24,14 +24,14 @@ Console recruiter allows you to create your own question list.
 5. Enjoy the time race!    
 
 ## The time pressure is too much! How to reduce it?
-Edit [application.property](/src/main/resources/application.properties) parameter and feel the shame. Every recruiter on the planet is looking down on you.  
+Edit [application.property](/console-recruiter-app/src/main/resources/application.properties) parameter and feel the shame. Every recruiter on the planet is looking down on you.  
 ```
 time.left=3 // in minutes
 ```
 
 ## I do not like having two rating strategy. Can I turn one of them off?
 Yes you can disable university like counting strategy. But be warned that you will stop feeling student-like thrill of the University examination.  
-Edit [application.property](/src/main/resources/application.properties) like so. 
+Edit [application.property](/console-recruiter-app/src/main/resources/application.properties) like so. 
 ```
 # Counting strategies
 lenient-strategy.enabled=true
@@ -44,12 +44,12 @@ Go to the db project [README](https://bitbucket.org/kozemkop/console-recruiter-d
 # Time for some boring technical stuff
 ## Persistence
 Application uses MongoDB. If you want to change some db parameter there are three places of interests.  
-1. [docker-compose.yml](/docker/docker-compose.yml) - here you can configure your mongoDb docker image.  
-2. [application.properties](/src/main/resources/application.properties) - here you can change your mongoDb spring related properties.  
+1. [docker-compose.yml](/console-recruiter-app/docker/docker-compose.yml) - here you can configure your mongoDb docker image.  
+2. [application.properties](/console-recruiter-app/src/main/resources/application.properties) - here you can change your mongoDb spring related properties.  
 3. [application.properties](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/src/master/src/main/resources/application.properties) - here you can change your mongoDb migration tool related properties.  
 
 ## Logging
-Application stores log into the logs directory. More information about how the logger would behave are available in [logback-spring.xml](/src/main/resources/logback-spring.xml) 
+Application stores log into the logs directory. More information about how the logger would behave are available in [logback-spring.xml](/console-recruiter-app/src/main/resources/logback-spring.xml) 
 
 ## Multithreading
 Recruit rating using multithreading. For every counting strategy there would be a new thread created during rating process.  
