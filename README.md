@@ -5,8 +5,8 @@ Console recruiter allows you to actually select how much time pressure you want 
 Console recruiter allows you to create your own question list.  
 <bold>Now lets jump straight into it!</bold>.
 
-## [Start reading here](/console-recruiter-app)
+## [Start reading here](/app)
 
 <p align="center">
-    <img alt="recruitment" src="https://raw.githubusercontent.com/pokemzok/console-recruiter/master/console-recruiter-app/images/recruitment.gif" />
+    <img alt="recruitment" src="https://raw.githubusercontent.com/pokemzok/console-recruiter/master/app/images/recruitment.gif" />
 </p>  

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pokemzok.consolerecruiter</groupId>
-    <artifactId>db</artifactId>
+    <artifactId>db-version-control</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>db</name>
     <description>Incremental migration</description>
