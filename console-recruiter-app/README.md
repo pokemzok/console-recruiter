@@ -6,7 +6,7 @@ Console recruiter allows you to create your own question list.
 <bold>Now lets jump straight into it!</bold>.
 
 <p align="center">
-    <img alt="recruitment" src="/images/recruitment.gif" />
+    <img alt="recruitment" src="https://raw.githubusercontent.com/pokemzok/console-recruiter/master/console-recruiter-app/images/recruitment.gif" />
 </p>  
 
 ## But before you do
