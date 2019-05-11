@@ -8,7 +8,7 @@
     ```  
 3. Go to target location. There, run application jar
     ```
-        java -jar db-0.0.1-SNAPSHOT.jar
+        java -jar db-version-control-0.0.1-SNAPSHOT.jar
     ```
 4. Check console logs to make sure everything went smoothly
 
