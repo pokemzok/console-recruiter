@@ -12,7 +12,7 @@ Console recruiter allows you to create your own question list.
 ## But before you do
 0. Make sure you have Java 11 and running Docker
 1. Run [docker-up.bat](/console-recruiter-app/docker/docker-up.bat) (or if you on linux, just copy the command from this script)
-2. Complete [README](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/) from db project (how to use section)
+2. Complete [README](/console-recruiter-db-version-control) from db project (how to use section)
 3. Build application with maven
     ```
      mvn clean install
@@ -39,14 +39,14 @@ university-strategy.enabled=false
 ``` 
 ## This is too easy! I want more challenging questions! 
 That's the spirit! Every recruiter is moderately but sincerely clapping. Better clean your email box, because tonight you will get plenty of job offers!  
-Go to the db project [README](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/) page and do as it says (writing your own migration section)
+Go to the console-recruiter-db-version-control [README](/console-recruiter-db-version-control) page and do as it says (writing your own migration section)
  
 # Time for some boring technical stuff
 ## Persistence
 Application uses MongoDB. If you want to change some db parameter there are three places of interests.  
 1. [docker-compose.yml](/console-recruiter-app/docker/docker-compose.yml) - here you can configure your mongoDb docker image.  
 2. [application.properties](/console-recruiter-app/src/main/resources/application.properties) - here you can change your mongoDb spring related properties.  
-3. [application.properties](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/src/master/src/main/resources/application.properties) - here you can change your mongoDb migration tool related properties.  
+3. [application.properties](/console-recruiter-db-version-control/src/main/resources/application.properties) - here you can change your mongoDb migration tool related properties.  
 
 ## Logging
 Application stores log into the logs directory. More information about how the logger would behave are available in [logback-spring.xml](/console-recruiter-app/src/main/resources/logback-spring.xml) 
@@ -56,6 +56,6 @@ Recruit rating using multithreading. For every counting strategy there would be 
 If you want to write your own counting strategy implement CountingPointsStrategy and than configure your new bean in the similar way as LenientCountingStrategy.
 
 ## MongoDb migration tool
-If you looking for an example how to manage your database changes make sure to look into the db project [README](https://bitbucket.org/kozemkop/console-recruiter-db-version-control/) page.
+If you looking for an example how to manage your database changes make sure to look into the console-recruiter-db-version-control [README](/console-recruiter-db-version-control) page.
 
 
