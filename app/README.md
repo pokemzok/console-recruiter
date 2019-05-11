@@ -19,7 +19,7 @@ Console recruiter allows you to create your own question list.
     ```
 4. Deploy an application. Go to the target location of your build and run
     ```
-    java -jar console-recruiter-0.0.1-SNAPSHOT.jar
+    java -jar app-0.0.1-SNAPSHOT.jar
     ```
 5. Enjoy the time race!    
 
