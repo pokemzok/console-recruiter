@@ -30,7 +30,7 @@ time.left=3 // in minutes
 ```
 
 ## I do not like having two rating strategy. Can I turn one of them off?
-Yes you can disable university like counting strategy. But be warned that you will stop feeling student-like thrill of the University examination.  
+Yes you can disable university like counting strategy. But be warned, because you will stop feeling student-like thrill of the University examination.  
 Edit [application.property](/console-recruiter-app/src/main/resources/application.properties) like so. 
 ```
 # Counting strategies
