@@ -52,7 +52,7 @@ Application uses MongoDB. If you want to change some db parameter there are thre
 Application stores log into the logs directory. More information about how the logger would behave are available in [logback-spring.xml](/app/src/main/resources/logback-spring.xml) 
 
 ## Multithreading
-Recruit rating using multithreading. For every counting strategy there would be a new thread created during rating process.  
+Recruit rating use multithreading. For every counting strategy there would be a new thread created during rating process.  
 If you want to write your own counting strategy implement CountingPointsStrategy and than configure your new bean in the similar way as LenientCountingStrategy.
 
 ## MongoDb migration tool
